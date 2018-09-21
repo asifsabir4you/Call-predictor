@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/holo_blue_dark"
+            android:src="@android:drawable/ic_dialog_alert" />
+
+        <LinearLayout
+            android:id="@+id/phone_auth_fields"
+            android:layout_marginTop="30dp"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/field_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="phone number"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/field_verification_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="verification code"
+                    android:inputType="number"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_verification_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="*May take upto 1 minute to get the sms."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:textStyle="italic"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:weightSum="3.0">
+
+                <Button
+                    android:id="@+id/button_start_verification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="start auth"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button_verify_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:text="verify"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/button_resend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="resend"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/pb_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "711505152678",
+    "firebase_url": "https://call-and-data-prediction-app.firebaseio.com",
+    "project_id": "call-and-data-prediction-app",
+    "storage_bucket": "call-and-data-prediction-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711505152678:android:a177206c5f21affa",
+        "android_client_info": {
+          "package_name": "com.example.asifsabir.callpredictor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711505152678-jn57188lnfl1m96e5174gj5qc2rl51c1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asifsabir.callpredictor",
+            "certificate_hash": "c3f443a16352c4812464e382e08c47ab0d0c3f4b"
+          }
+        },
+        {
+          "client_id": "711505152678-7p2j5lf57ks6o09pffkujd86948tlk2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asifsabir.callpredictor",
+            "certificate_hash": "cd990e62dd15702ec9de578ef05872aa1d7dc0cc"
+          }
+        },
+        {
+          "client_id": "711505152678-1hdjuucijbuu2j33018dth09kpr2jacj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD6gG_0XyM_64K4TSTDGc1bcqOU1EOE0g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711505152678-1hdjuucijbuu2j33018dth09kpr2jacj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
