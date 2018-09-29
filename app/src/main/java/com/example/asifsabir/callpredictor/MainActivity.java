@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
     private static final int PERMISSION_READ_STATE = 0;
     // TextView textOut;
     ProgressBar pb1;
-    TextView tvCallsInfo, tvDataInfo, tvPhone, tvDataHistory, tvDataPredict,tvCallsPredict;
+    TextView tvCallsInfo, tvDataInfo, tvPhone, tvDataHistory, tvDataPredict, tvCallsPredict;
     FirebaseAuth mAuth;
-    Button btnLogOut, btnDownloadInterent,btnPredictIntenet,btnPredictCalls;
+    Button btnLogOut, btnDownloadInterent, btnPredictIntenet, btnPredictCalls;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -62,10 +62,10 @@ public class MainActivity extends AppCompatActivity {
         ScheduleDailyN();
 
         initArrayWithZero();
-        btnPredictIntenet = (Button)findViewById(R.id.btn_predict_internet_usage);
+        btnPredictIntenet = (Button) findViewById(R.id.btn_predict_internet_usage);
         btnLogOut = (Button) findViewById(R.id.btn_log_out);
         btnDownloadInterent = (Button) findViewById(R.id.btn_download_internet_history);
-        btnPredictCalls =(Button)findViewById(R.id.btn_predict_call_usage);
+        btnPredictCalls = (Button) findViewById(R.id.btn_predict_call_usage);
         tvCallsPredict = (TextView) findViewById(R.id.tv_call_predict);
         tvCallsInfo = (TextView) findViewById(R.id.call_info);
         tvDataInfo = (TextView) findViewById(R.id.data_info);
@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         btnDownloadInterent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                btnDownloadInterent.setVisibility(View.GONE);
                 String IntenetDisplayString = "Internet History (Bytes): ";
                 if (list.size() != 0) {
                     for (int i = 0; i < list.size(); i++) {
@@ -418,8 +419,8 @@ public class MainActivity extends AppCompatActivity {
 //        System.out.println("Enter no of elements in cluster");
         k_means = list.size();
         int a[] = new int[k_means];
-        int c1[] = new int[10];
-        int c2[] = new int[10];
+        int c1[] = new int[k_means];
+        int c2[] = new int[k_means];
         System.out.println("Enter elements in cluster");
         for (i = 0; i < k_means; i++) {
             a[i] = Integer.parseInt(list.get(i));
@@ -452,10 +453,10 @@ public class MainActivity extends AppCompatActivity {
             m2 = op.average(c2, k_means);
 //            System.out.print("average of cluster2 "+m2);
 //            System.out.println();
-            tvDataPredict.setText("Min Usage: "+Math.round(m1)+" Bytes"+
-                    "\n"+"Max Usage: "+Math.round(m2)+ " Bytes"); }
+            tvDataPredict.setText("Min Usage: " + Math.round(m1) + " Bytes" +
+                    "\n" + "Max Usage: " + Math.round(m2) + " Bytes");
+        }
     }
-
 
 
     public void getCallsCluster() {
@@ -475,7 +476,7 @@ public class MainActivity extends AppCompatActivity {
         }
 //        System.out.println("Enter value of m1 and m2");
         m1 = Integer.parseInt(String.valueOf(dateOfMonth[0]));
-        m2 = Integer.parseInt(String.valueOf(dateOfMonth[dateOfMonth.length-1]));
+        m2 = Integer.parseInt(String.valueOf(dateOfMonth[dateOfMonth.length - 1]));
         Operations op = new Operations();
         while (q != m2 && w != m2) {
             for (i = 0; i < k_means; i++) {
@@ -501,25 +502,10 @@ public class MainActivity extends AppCompatActivity {
             m2 = op.average(c2, k_means);
 //            System.out.print("average of cluster2 "+m2);
 //            System.out.println();
-            tvCallsPredict.setText("Min : "+Math.round(m1/60)+" Min"+
-                    "\n"+"Max : "+Math.round(m2/60)+ " Min"); }
+            tvCallsPredict.setText("Min : " + Math.round(m1 / 60) + " Min" +
+                    "\n" + "Max : " + Math.round(m2 / 60) + " Min");
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
