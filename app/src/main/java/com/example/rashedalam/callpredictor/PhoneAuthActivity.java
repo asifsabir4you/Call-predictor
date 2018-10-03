@@ -1,4 +1,4 @@
-package com.example.asifsabir.callpredictor;
+package com.example.rashedalam.callpredictor;
 
 /**
  * Created by asifsabir on 12/5/17.

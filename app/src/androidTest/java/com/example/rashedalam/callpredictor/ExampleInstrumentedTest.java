@@ -1,4 +1,4 @@
-package com.example.asifsabir.callpredictor;
+package com.example.rashedalam.callpredictor;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

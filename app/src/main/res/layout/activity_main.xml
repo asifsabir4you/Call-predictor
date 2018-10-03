@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray"
     android:orientation="vertical"
-    tools:context="com.example.asifsabir.callpredictor.MainActivity">
+    tools:context="com.example.rashedalam.callpredictor.MainActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"

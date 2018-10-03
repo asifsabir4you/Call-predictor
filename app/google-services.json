@@ -8,25 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:711505152678:android:a177206c5f21affa",
+        "mobilesdk_app_id": "1:711505152678:android:d74c8efa313aa437",
         "android_client_info": {
-          "package_name": "com.example.asifsabir.callpredictor"
+          "package_name": "com.example.rashedalam.callpredictor"
         }
       },
       "oauth_client": [
         {
-          "client_id": "711505152678-jn57188lnfl1m96e5174gj5qc2rl51c1.apps.googleusercontent.com",
+          "client_id": "711505152678-gqj8j8nqsukv7rb5opuc37hlicf3633t.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.asifsabir.callpredictor",
-            "certificate_hash": "c3f443a16352c4812464e382e08c47ab0d0c3f4b"
-          }
-        },
-        {
-          "client_id": "711505152678-7p2j5lf57ks6o09pffkujd86948tlk2k.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.asifsabir.callpredictor",
+            "package_name": "com.example.rashedalam.callpredictor",
             "certificate_hash": "cd990e62dd15702ec9de578ef05872aa1d7dc0cc"
           }
         },
